@@ -1,6 +1,6 @@
 # jihou-gisou-gs
 
-slackでの時報を偽装するためのGSファイル
+slackでの時報を自動化するためのGSファイル
 
 ## 使い方
 
