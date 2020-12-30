@@ -21,3 +21,17 @@ function sendToSlack() {
   const response = UrlFetchApp.fetch(url, options);
   Logger.log(response)
 }
+
+// To set triggers just like you send.
+function setTrigger() {
+ var setTime = new Date();
+  setTime.setDate(setTime.getDate())
+  for(let i = 10; i <= 20; i++) {
+    setTime.setHours(i);
+    var min = 0 ;
+    var max = 6 ;
+    var a = Math.floor( Math.random() * (max + 1 - min) ) + min ;
+    setTime.setMinutes(a);
+    ScriptApp.newTrigger('sendToSlack').timeBased().at(setTime).create();
+  }
+}
