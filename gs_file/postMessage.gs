@@ -6,7 +6,7 @@ function sendToSlack() {
   }
 
   // Insert your messages.
-  var sample_message = ['Hi Boss, I'm fine.', 'Hi, I'm so busy.', 'Not good.']
+  var sample_message = ['Hi Boss, I am fine.', 'Hi, I am so busy.', 'Not good.']
 
   // Get and replace slack channels's id in your workspace(`CHANNEL_ID`) and your boss's id(`BOSS_USER_ID`)
   const data = {
